@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com objetos e funções</title>
+    <script src="./estoque.js" defer></script>
+
+</head>
+<body>
+    <h1>Registro de Estoque</h1>
+
+    <form method="GET" action="./objetos.html" onsubmit="return false">
+        <label for="quantidade-estoque">QTD:</label>
+        <input type="number" name="quantidade-estoque" id="quantidade-estoque">
+        <label for="nome-produto">Nome do Produto:</label>
+        <input type="text" name="nome-produto" id="nome-produto">
+        <label for="btn-enviar"></label>
+        <button name="btn-enviar" id="btn-enviar">Enviar</button>
+
+    </form>
+
+    <br>
+    <br>
+
+    <div id="texto"></div>
+
+    <button class="btn-mostrarEstoque" onclick="exibirResultado()">Mostrar-Estoque</button>
+    <button class="btn-esconderEstoque" onclick="esconderEstoque()">Esconder Estoque</button>
+    
+    
+</body>
+</html>
