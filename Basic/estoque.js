@@ -9,12 +9,7 @@ document.getElementById("btn-enviar").addEventListener("click", function(){
 
 const listaProdutos = []
 
-function criarProduto (quantidadeProduto, nomeProduto) { 
-     return {
-            nomeProduto,
-            quantidadeProduto,
-        }
-}
+const criarProduto = (quantidadeProduto, nomeProduto) => ({ nomeProduto, quantidadeProduto });
 
 function addLista(quantidadeProduto, nomeProduto){
     let produto = criarProduto(quantidadeProduto, nomeProduto)
@@ -34,4 +29,9 @@ function exibirResultado () {
 function esconderEstoque(){
     const texto = document.getElementById("texto")
     texto.innerHTML = ""
+}
+
+// Delata o item com nome igual na lista. Ainda para fazer. Tem que saber se não vai ficar vazio o espaço no array
+function deletaItem(){
+
 }
